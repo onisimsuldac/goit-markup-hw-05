@@ -160,7 +160,7 @@ a:focus {
   align-items: center;
 }
 
-.hero-section .button {
+.hero-section .request-our-service-button {
   color: var(--heading-color);
   text-align: center;
   font-size: 16px;
@@ -720,4 +720,55 @@ button {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform var(--transition);
+  width: 1600px;
+  height: 1050px;
+  background: rgba(0, 0, 0, 0.20);
+}
+
+
+.modal-content {
+  padding: 16px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  width: 528px;
+  height: 581px;
+}
+
+.is-hidden {
+  visibility: hidden;
+  /* transform: scale(1.1); */
+}
+
+.close-btn {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.10);;
+  color: black;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: background-color var(--transition);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  background-color: red;
 }

@@ -49,7 +49,7 @@
         <section class="hero-section">
             <h1 title="EFFECTIVE SOLUTIONS FOR YOUR BUSINESS" class="hero-heading">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS
             </h1>
-            <button type="button" class="button">Request our service</button>
+            <button data-modal-open class="request-our-service-button">Request our service</button>
         </section>
         <section class="text-section">
             <ul class="list-section">
@@ -322,7 +322,15 @@
         </ul>
 
     </footer>
-    <script src="./js/modal.js"></script>
+    <!-- modal -->
+    <div class="modal is-hidden" data-modal>
+        <div class="modal-content">
+            <button class="close-btn" data-modal-close>&times;</button>
+        </div>
+        <script>
+            feather.replace()
+        </script>
+           <script src="./js/modal.js"></script>
 </body>
 
 </html>
